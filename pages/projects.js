@@ -37,6 +37,7 @@ const ProjectsPage = ({projects}) => {
     const projectsArr = projects.map(project => (
         <Project
             key={project.sys.id && project.sys.id}
+            slug={project.fields.slug }
             title={project.fields.projectName && project.fields.projectName}
             excerpt={project.fields.projectExcerpt && project.fields.projectExcerpt}
             description={project.fields.projectDescription && project.fields.projectDescription}

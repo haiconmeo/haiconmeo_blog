@@ -72,6 +72,10 @@ export const customTwo = {
     heading: 'Film photos',
     body: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit.'
 }
+export const customcv = {
+    heading: 'Download my CV',
+    body: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit.'
+}
 
 export const customThree = {
     heading: '学歴',

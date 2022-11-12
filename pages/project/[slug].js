@@ -16,7 +16,7 @@ let client = require('contentful').createClient({
 
 export async function getStaticPaths() {
     let data = await client.getEntries({
-        content_type: 'blogPost',
+        content_type: 'project',
     });
 
     return {
@@ -29,7 +29,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({params}) {
     let data = await client.getEntries({
-        content_type: 'blogPost',
+        content_type: 'project',
         'fields.slug': params.slug
     });
 
@@ -41,7 +41,7 @@ export async function getStaticProps({params}) {
     }
 }
 
-const SinglePost = ({post}) => {
+const SingleProject = ({post}) => {
     const { colorMode } = useColorMode()
     const router = useRouter();
     const options = {
@@ -73,7 +73,7 @@ const SinglePost = ({post}) => {
     return (
         <>
         <Head>
-            <title>Blog | {post.fields.blogTitle}</title>
+            <title>Blog | {post.fields.projectName}</title>
         </Head>
         <VStack minHeight="100vh" bgGradient={colorMode === 'light' ? "linear(to-r, #1F1C2C, #928DAB)" : "linear(to-r, #0F2027, #203A43, #24243e)"}>
             <Container maxW="960" mt="12" color={colorMode === 'light' ? '#FFF' : '#eee'}>
@@ -82,10 +82,9 @@ const SinglePost = ({post}) => {
                 <Button _hover={{bg: null}} bg={colorMode === 'light' ? 'gray.700' : 'gray.800'} color={colorMode === 'light' ? 'green.100' : 'green.100'} onClick={() => router.push('/blog')} mb="2" size="sm" leftIcon={<FaChevronLeft/>}>Go Back</Button>
 
                 <Flex flexDirection="column" justifyContent="center">
-                    <Image placeholder="blur" blurDataURL="https://via.placeholder.com/150" src={post.fields.blogPostImage.fields.file.url && 'https:' + post.fields.blogPostImage.fields.file.url} layout="intrinsic" width="960" height="500" alt={`Image banner for ${post.fields.blogTitle} post`} objectFit="cover" />
-                    <Heading my="4" fontSize="2rem">{post.fields.blogTitle}</Heading>
+                    <Heading my="4" fontSize="2rem">{post.fields.projectName}</Heading>
 
-                    <Text as="span" fontSize="1.25rem">{documentToReactComponents(post.fields.blogContent,options)}</Text>
+                    <Text as="span" fontSize="1.25rem">{documentToReactComponents(post.fields.projectDescription,options)}</Text>
 
                 </Flex>
             </Container>
@@ -94,4 +93,4 @@ const SinglePost = ({post}) => {
     )
 }
 
-export default SinglePost;
+export default SingleProject;
