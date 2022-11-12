@@ -11,7 +11,7 @@ const CustomComponentFive = () => {
                 {customFive.heading}
             </Heading>
             {customFive.body.map((skill, i) => (
-                <Text>{skill.name}  {skill.value}</Text>
+                <Text key={i}>{skill.name}  {skill.value}</Text>
             ))}
         </Box>
     )

@@ -11,7 +11,7 @@ const CustomComponentFour = () => {
                 {customFour.heading}
             </Heading>
             {customFour.body.map((skill, i) => (
-                <Text>{skill.name}  {skill.value}</Text>
+                <Text key={i}>{skill.name}  {skill.value}</Text>
             ))}
         </Box>
     )
