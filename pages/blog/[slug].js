@@ -71,7 +71,7 @@ const SinglePost = ({ post }) => {
                     _.find(node.content[0].marks, { type: 'code' })
                 ) {
                     return (
-
+                        
                         <CopyBlock
                             text={node.content[0].value}
                             language='python'
@@ -105,13 +105,13 @@ const SinglePost = ({ post }) => {
             <Head>
                 <title>Blog | {post.fields.blogTitle}</title>
             </Head>
-            <VStack minHeight="100vh" bgGradient={colorMode === 'light' ? "linear(to-r, #1F1C2C, #928DAB)" : "linear(to-r, #0F2027, #203A43, #24243e)"}>
+            <VStack minHeight="100vh" pb = {12} bgGradient={colorMode === 'light' ? "linear(to-r, #1F1C2C, #928DAB)" : "linear(to-r, #0F2027, #203A43, #24243e)"}>
                 <Container maxW="960" mt="12" color={colorMode === 'light' ? '#FFF' : '#eee'}>
                     <ThemeBtn />
 
                     <Button _hover={{ bg: null }} bg={colorMode === 'light' ? 'gray.700' : 'gray.800'} color={colorMode === 'light' ? 'green.100' : 'green.100'} onClick={() => router.push('/blog')} mb="2" size="sm" leftIcon={<FaChevronLeft />}>Go Back</Button>
 
-                    <Flex flexDirection="column" justifyContent="center">
+                    <Flex flexDirection="column" justifyContent="center" pb='10'>
                         <Image placeholder="blur" blurDataURL="https://via.placeholder.com/150" src={post.fields.blogPostImage.fields.file.url && 'https:' + post.fields.blogPostImage.fields.file.url} layout="intrinsic" width="960" height="500" alt={`Image banner for ${post.fields.blogTitle} post`} objectFit="cover" />
                         <Heading my="4" fontSize="2rem">{post.fields.blogTitle}</Heading>
 
