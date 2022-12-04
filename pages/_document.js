@@ -23,6 +23,7 @@ export default class Document extends NextDocument {
           />
         </Head>
         <body>
+        <NextScript />
           <noscript
             dangerouslySetInnerHTML={{
               __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9QWSVM" height="0" width="0" style="display: none; visibility: hidden;" />`,
@@ -31,7 +32,6 @@ export default class Document extends NextDocument {
           {/* 👇 Here's the script */}
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
           <Main />
-          <NextScript />
         </body>
       </Html>
     )
