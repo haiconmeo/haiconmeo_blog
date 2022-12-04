@@ -19,6 +19,8 @@ export default class Document extends NextDocument {
         })(window,document,'script','dataLayer','G-N9XN9ZR3GZ');`}}></Script>
         </Head>
         <body>
+        <noscript dangerouslySetInnerHTML={{ __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=G-N9XN9ZR3GZ"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>`}}></noscript>
           {/* 👇 Here's the script */}
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
           <Main />
