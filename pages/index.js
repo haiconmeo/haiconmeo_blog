@@ -21,7 +21,6 @@ import CustomComponentFive from '../components/CustomComponentFive'
 
 import Masonry from 'react-masonry-css'
 import DownloadCv from '../components/DownloadCv'
-import Script from 'next/script'
 // responsive breakpoints for masonry grid. Cant be easily adjusted here
 const breakpointColumnsObj = {
   default: 3,
@@ -40,8 +39,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:title" content="Haiconmeo" />
         <meta property="og:image" content="https://scontent.fdad3-5.fna.fbcdn.net/v/t39.30808-6/313414115_190230920179002_4850919535704207251_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=txGOlDwoHdoAX_eAX9z&_nc_ht=scontent.fdad3-5.fna&oh=00_AfC1-L227G6UIx6U7edfekwQqHPWy-t49Yctnb9-__cbnw&oe=6373BEAB" />
-
-        <Script src="https://messenger.svc.chative.io/static/v1.0/channels/s5872f568-fe3a-4896-8236-4a4a150699f8/messenger.js?mode=livechat" defer="defer"></Script>
       </Head>
 
       <VStack minHeight="100vh" bgGradient={colorMode === 'light' ? "linear(to-r, #1F1C2C, #928DAB)" : "linear(to-r, #0F2027, #203A43, #24243e)"}>
