@@ -52,7 +52,7 @@ const SinglePost = ({ post }) => {
                     <img
                         src={url}
                         alt={fileName}
-                        style={{ height: "auto", width: "100%", margin: "1em 0" }}
+                        style={{ height: "auto", width: "100%", margin: "1em 0", padding:'1em' }}
                     />
                 );
             },
@@ -71,28 +71,33 @@ const SinglePost = ({ post }) => {
                     _.find(node.content[0].marks, { type: 'code' })
                 ) {
                     return (
-                        
+                        <div style={{ padding:'1em' }}>
                         <CopyBlock
                             text={node.content[0].value}
                             language='python'
                             showLineNumbers='false'
                             wrapLines
                             theme={dracula}
+                            style={{ padding: "1em 0" }}
                         />
+                        </div>
 
                     )
                 }
                 else
-                    return <p>{children}</p>;
+                    return children;
             },
             [MARKS.CODE]: (node) => {
-                return (<CopyBlock
+                return (
+                <div style={{ padding:'1em' }}>
+                <CopyBlock
                     text={node.chi}
                     language='python'
                     showLineNumbers='true'
                     wrapLines
                     theme={dracula}
-                />)
+                />
+                </div>)
             }
         },
     };
