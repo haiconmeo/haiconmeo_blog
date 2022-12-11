@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Blog posts | RSS Feed]]></title>
+        <description><![CDATA[Welcome to this blog posts!]]></description>
+        <link>https://haiconmeo.info</link>
+        <image>
+            <url>https://haiconmeo.info/logo.png</url>
+            <title>Blog posts | RSS Feed</title>
+            <link>https://haiconmeo.info</link>
+        </image>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Sun, 11 Dec 2022 06:55:09 GMT</lastBuildDate>
+        <atom:link href="https://haiconmeo.info/rss.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Sun, 11 Dec 2022 06:55:09 GMT</pubDate>
+        <copyright><![CDATA[All rights reserved 2022, Ibas]]></copyright>
+        <item>
+            <title><![CDATA[KNN (K Nearest Neighbors)  python]]></title>
+            <description><![CDATA[Triển khai thuật toán K Hàng xóm gần nhất (KNN), chỉ sử dụng các mô-đun Python tích hợp sẵn và numpy, đồng thời tìm hiểu về phép toán đằng sau thuật toán ML phổ biến này.]]></description>
+            <link>https://haiconmeo.info/blog/knn-python</link>
+            <guid isPermaLink="true">https://haiconmeo.info/blog/knn-python</guid>
+        </item>
+        <item>
+            <title><![CDATA[Các bước thông thường để giải quyết bài toán machine learning]]></title>
+            <description><![CDATA[Machine learning (ML) hay máy học là một nhánh của trí tuệ nhân tạo (AI), nó là một lĩnh vực nghiên cứu cho phép máy tính có khả năng cải thiện chính bản thân]]></description>
+            <link>https://haiconmeo.info/blog/Các bước thông thường để giải quyết bài toán machine learning</link>
+            <guid isPermaLink="true">https://haiconmeo.info/blog/Các bước thông thường để giải quyết bài toán machine learning</guid>
+        </item>
+        <item>
+            <title><![CDATA[Khai thác lỗi SVG Expansion]]></title>
+            <description><![CDATA[SVG là một định dạng giúp các website render hình ảnh nhanh hơn với các size hình ảnh khi phóng to thu nhỏ không bị ảnh hưởng, ưu điểm của svg rất nhiều nhưng nó cũng có nhiều vấn đề khi các file svg được upload một cách tự do]]></description>
+            <link>https://haiconmeo.info/blog/SVG-Expansion-la-gi</link>
+            <guid isPermaLink="true">https://haiconmeo.info/blog/SVG-Expansion-la-gi</guid>
+        </item>
+        <item>
+            <title><![CDATA[Lab 4: SQL injection UNION attack, finding a column containing text]]></title>
+            <description><![CDATA[This lab contains an SQL injection vulnerability in the product category filter. The results from the query are returned in the application's response]]></description>
+            <link>https://haiconmeo.info/blog/SQL injection UNION attack, finding a column containing text</link>
+            <guid isPermaLink="true">https://haiconmeo.info/blog/SQL injection UNION attack, finding a column containing text</guid>
+        </item>
+        <item>
+            <title><![CDATA[Lab 3: SQL injection UNION attack, determining the number of columns returned by the query PRACTITIONER]]></title>
+            <description><![CDATA[This lab contains an SQL injection vulnerability in the product category filter. The results from the query are returned in the application's response, so you can use a UNION attack to retrieve data from other tables]]></description>
+            <link>https://haiconmeo.info/blog/SQL injection UNION attack</link>
+            <guid isPermaLink="true">https://haiconmeo.info/blog/SQL injection UNION attack</guid>
+        </item>
+        <item>
+            <title><![CDATA[Lab 2: SQL injection vulnerability allowing login bypass]]></title>
+            <description><![CDATA[This lab contains an SQL injection vulnerability in the login function.  To solve the lab, perform an SQL injection attack that logs in to the application as the administrator user.]]></description>
+            <link>https://haiconmeo.info/blog/SQL injection vulnerability allowing login bypass</link>
+            <guid isPermaLink="true">https://haiconmeo.info/blog/SQL injection vulnerability allowing login bypass</guid>
+        </item>
+        <item>
+            <title><![CDATA[Lab1: SQL injection vulnerability in WHERE clause allowing retrieval of hidden data]]></title>
+            <description><![CDATA[This lab contains an SQL injection vulnerability in the product category filter. When the user selects a category, the application carries out an SQL query like the following:]]></description>
+            <link>https://haiconmeo.info/blog/SQL injection vulnerability in WHERE clause allowing retrieval of hidden data</link>
+            <guid isPermaLink="true">https://haiconmeo.info/blog/SQL injection vulnerability in WHERE clause allowing retrieval of hidden data</guid>
+        </item>
+        <item>
+            <title><![CDATA[Thực hành các bài lab trên Web Security Academy]]></title>
+            <description><![CDATA[Web Security Academy là trang web chuyên về đào tạo bảo mật. TRong website này có chứa rất nhiều bài lab, các kịch bản tấn công để các pentester có thể ]]></description>
+            <link>https://haiconmeo.info/blog/Web Security Academy</link>
+            <guid isPermaLink="true">https://haiconmeo.info/blog/Web Security Academy</guid>
+        </item>
+        <item>
+            <title><![CDATA[Ransomware là gì?]]></title>
+            <description><![CDATA[Ransomware là một loại virus máy tính, nó mã hóa các tập tin quan trọng trong máy của bạn bằng mã hóa bất đối xứng,]]></description>
+            <link>https://haiconmeo.info/blog/ransomware-python</link>
+            <guid isPermaLink="true">https://haiconmeo.info/blog/ransomware-python</guid>
+        </item>
+        <item>
+            <title><![CDATA[Tạo hàng loạy ipv6 từ 1 vps]]></title>
+            <description><![CDATA[Trong bài viết này mình sẽ hưỡng dẫn tạo ra hàng loạt proxy ipv6 thông qua 1 vps ubuntu. Thông thường các loại proxy này mình dùng để truy cập vào các website bị chặn ở VN, crawl dữ liệu, ]]></description>
+            <link>https://haiconmeo.info/blog/proxy-ipv6-tunnels</link>
+            <guid isPermaLink="true">https://haiconmeo.info/blog/proxy-ipv6-tunnels</guid>
+        </item>
+        <item>
+            <title><![CDATA[Phân tích dữ liệu với bộ movilen 1m]]></title>
+            <description><![CDATA[MovieLen là bộ dataset liên quan đến đánh giá của các người dùng đối với các bộ phim. Bộ dataset được lấy trên website movielen.org. ]]></description>
+            <link>https://haiconmeo.info/blog/movielen 1m</link>
+            <guid isPermaLink="true">https://haiconmeo.info/blog/movielen 1m</guid>
+        </item>
+        <item>
+            <title><![CDATA[SETUP TOR PROXY]]></title>
+            <description><![CDATA[SOCKS là viết tắt của Socket Secure. SOCKS là một giao thức internet, giúp định tuyến các gói giữa máy chủ và máy khách bằng proxy server. Socks5 nhanh hơn, bảo mật và có hỗ trợ udp. ]]></description>
+            <link>https://haiconmeo.info/blog/tor-proxy</link>
+            <guid isPermaLink="true">https://haiconmeo.info/blog/tor-proxy</guid>
+        </item>
+        <item>
+            <title><![CDATA[Superset 1- Cơ bản về superset]]></title>
+            <description><![CDATA[Superset là nền tảng mã nguồn mở dùng để khám phá và trực quan dữ liệu. Superset được code bằng flask và react. Một số ưu điểm cảu superset như]]></description>
+            <link>https://haiconmeo.info/blog/superset- co-ban</link>
+            <guid isPermaLink="true">https://haiconmeo.info/blog/superset- co-ban</guid>
+        </item>
+        <item>
+            <title><![CDATA[Hệ thống gợi ý là gì?]]></title>
+            <description><![CDATA[Dự trên nội dung: nhóm này đưa ra các sản phẩm có đặc trưng giần giống với sản phẩm mà user đó thích trước đó. Bản chất là xây dựng các vector sản phẩm sao cho các sản phẩm giống nhau thì khoảng các giữa các vector nhỏ và ngược lại]]></description>
+            <link>https://haiconmeo.info/blog/he thong goi y la gi</link>
+            <guid isPermaLink="true">https://haiconmeo.info/blog/he thong goi y la gi</guid>
+        </item>
+    </channel>
+</rss>

@@ -6,7 +6,7 @@ import Masonry from 'react-masonry-css'
 
 import Header from '../components/Header'
 import Post from '../components/Post';
-
+import generateRssFeed from '../utils/generateRSSFeed';
 
 let client = require('contentful').createClient({
     space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID, // 👈🏼  Create your .env.local file. Contentful SpaceID
@@ -14,6 +14,7 @@ let client = require('contentful').createClient({
   });
 
     export async function getStaticProps() {
+      await generateRssFeed();
     let data = await client.getEntries({
         content_type: 'blogPost' // 👈🏼 IMPORTANT. Based on blog. This id is base on the same way I set up my contentful content model
     })
