@@ -26,7 +26,7 @@ export default async function generateRssFeed() {
     feed.item({
      title: post.fields.blogTitle,
      description: post.fields.blogExcerpt,
-     url: `${site_url}/blog/${post.fields.slug}`,
+     url: encodeURI(`${site_url}/blog/${post.fields.slug}`),
      date: new Date(),
     });
    });
