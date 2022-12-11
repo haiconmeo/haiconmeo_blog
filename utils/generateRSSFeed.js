@@ -9,7 +9,7 @@ export default async function generateRssFeed() {
   });
   let allPosts = await client.getEntries({
     content_type: 'blogPost',
-    limit:10  // 👈🏼 IMPORTANT. Based on blog. This id is base on the same way I set up my contentful content model
+    limit:5 // 👈🏼 IMPORTANT. Based on blog. This id is base on the same way I set up my contentful content model
 })
  const feedOptions = {
   title: 'Blog posts | RSS Feed',
