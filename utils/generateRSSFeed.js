@@ -8,7 +8,8 @@ export default async function generateRssFeed() {
     accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACESS_TOKEN,// 👈🏼  Create your .env.local file. Contenful AccessToken
   });
   let allPosts = await client.getEntries({
-    content_type: 'blogPost' // 👈🏼 IMPORTANT. Based on blog. This id is base on the same way I set up my contentful content model
+    content_type: 'blogPost',
+    limit:5  // 👈🏼 IMPORTANT. Based on blog. This id is base on the same way I set up my contentful content model
 })
  const feedOptions = {
   title: 'Blog posts | RSS Feed',
