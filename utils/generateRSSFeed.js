@@ -9,7 +9,7 @@ export default async function generateRssFeed() {
   });
   let allPosts = await client.getEntries({
     content_type: 'blogPost',
-    limit:5  // 👈🏼 IMPORTANT. Based on blog. This id is base on the same way I set up my contentful content model
+    limit:10  // 👈🏼 IMPORTANT. Based on blog. This id is base on the same way I set up my contentful content model
 })
  const feedOptions = {
   title: 'Blog posts | RSS Feed',
@@ -27,7 +27,7 @@ export default async function generateRssFeed() {
      title: post.fields.blogTitle,
      description: post.fields.blogExcerpt,
      url: `${site_url}/blog/${post.fields.slug}`,
-     date: post.date,
+     date: new Date(),
     });
    });
    fs.writeFileSync('./public/rss.xml', feed.xml({ indent: true }));
