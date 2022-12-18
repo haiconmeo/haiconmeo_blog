@@ -16,7 +16,7 @@ const CustomComponentTwo = () => {
             </Heading>
             <HStack mt="4">
                 <Button _hover={{ bg: colorMode === 'light' ? '#928DAB' : "green.100", color: colorMode === 'light' ? null : "#111" }} variant="outline" leftIcon={<FaPhotoVideo />}>
-                    <a target="_blank" rel="noreferrer" href='https://www.facebook.com/2mymeomeo/'>goto</a>
+                    <a target="_blank" rel="noreferrer" href='https://z-p4.www.instagram.com/hoanghuumanh54/'>goto</a>
                 </Button>
             </HStack>
 
