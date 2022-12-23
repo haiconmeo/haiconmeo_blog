@@ -39,7 +39,7 @@ const breakpointColumnsObj = {
 export default function Images({imgs}) {
   const { colorMode } = useColorMode()
   const postsArr = imgs.map(e => (
-    <ImageCard img={e} />
+    <ImageCard key={e}  img={e} />
   ))
   return (
     <div>
