@@ -15,9 +15,7 @@ const CustomComponentTwo = () => {
                 {customTwo.heading}
             </Heading>
             <HStack mt="4">
-                <Button _hover={{ bg: colorMode === 'light' ? '#928DAB' : "green.100", color: colorMode === 'light' ? null : "#111" }} variant="outline" leftIcon={<FaPhotoVideo />}>
-                    <a target="_blank" rel="noreferrer" href='https://z-p4.www.instagram.com/hoanghuumanh54/'>goto</a>
-                </Button>
+            <Button onClick={() => router.push('/image')} _hover={{ bg: colorMode === 'light' ? '#928DAB' : "green.100", color: colorMode === 'light' ? null : "#111"}} variant="outline" >Film photo</Button>\
             </HStack>
 
         </Box>
