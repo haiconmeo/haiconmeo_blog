@@ -20,7 +20,7 @@ export async function getStaticProps() {
         max_results:25
       })
       let images = resources.resources.filter(resource => resource.resource_type === 'image')
-    images = images.map(e=>'http://res.cloudinary.com/dsthxgzde/image/upload/c_fill,w_450/'.concat(e.public_id))
+    images = images.map(e=>'http://res.cloudinary.com/dsthxgzde/image/upload/c_fill,w_350/'.concat(e.public_id))
     return {
         props:{imgs:images} 
         
