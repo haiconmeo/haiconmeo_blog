@@ -56,7 +56,11 @@ const BlogPage = ({ posts }) => {
   return (
     <VStack minHeight="100vh" bgGradient={colorMode === 'light' ? "linear(to-r,#1F1C2C, #928DAB)" : "linear(to-r, #0F2027, #203A43, #24243e)"}>
       <Head>
-        <title>Blog</title>
+        <title>HaiConMeo-Blog</title>
+        <meta name="description" content="Haiconmeo- Hoàng Hữu Mạnh" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content="Haiconmeo Hoàng Hữu Mạnh" />
+        <meta property="og:image" content="https://res.cloudinary.com/dsthxgzde/image/upload/c_fill,w_350/film%20photo/000017_x4h3kc.jpg" />
       </Head>
       <Container maxW="960">
         <Header />

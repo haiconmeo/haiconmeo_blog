@@ -52,7 +52,7 @@ const SinglePost = ({ post }) => {
                     <img
                         src={url}
                         alt={fileName}
-                        style={{ height: "auto", width: "100%", margin: "1em 0", padding:'1em' }}
+                        style={{ height: "auto", width: "100%", margin: "1em 0", padding: '1em' }}
                     />
                 );
             },
@@ -71,15 +71,15 @@ const SinglePost = ({ post }) => {
                     _.find(node.content[0].marks, { type: 'code' })
                 ) {
                     return (
-                        <div style={{ padding:'1em' }}>
-                        <CopyBlock
-                            text={node.content[0].value}
-                            language='python'
-                            showLineNumbers='false'
-                            wrapLines
-                            theme={dracula}
-                            style={{ padding: "1em 0" }}
-                        />
+                        <div style={{ padding: '1em' }}>
+                            <CopyBlock
+                                text={node.content[0].value}
+                                language='python'
+                                showLineNumbers='false'
+                                wrapLines
+                                theme={dracula}
+                                style={{ padding: "1em 0" }}
+                            />
                         </div>
 
                     )
@@ -89,15 +89,15 @@ const SinglePost = ({ post }) => {
             },
             [MARKS.CODE]: (node) => {
                 return (
-                <div style={{ padding:'1em' }}>
-                <CopyBlock
-                    text={node.chi}
-                    language='python'
-                    showLineNumbers='true'
-                    wrapLines
-                    theme={dracula}
-                />
-                </div>)
+                    <div style={{ padding: '1em' }}>
+                        <CopyBlock
+                            text={node.chi}
+                            language='python'
+                            showLineNumbers='true'
+                            wrapLines
+                            theme={dracula}
+                        />
+                    </div>)
             }
         },
     };
@@ -109,8 +109,14 @@ const SinglePost = ({ post }) => {
         <>
             <Head>
                 <title>Blog | {post.fields.blogTitle}</title>
+
+                <meta name="description" content="Haiconmeo- Hoàng Hữu Mạnh" />
+                <link rel="icon" href="/favicon.ico" />
+                <meta property="og:title" content="Haiconmeo Hoàng Hữu Mạnh" />
+                <meta property="og:image" content={post.fields.blogPostImage.fields.file.url} />
+
             </Head>
-            <VStack minHeight="100vh" pb = {12} bgGradient={colorMode === 'light' ? "linear(to-r, #1F1C2C, #928DAB)" : "linear(to-r, #0F2027, #203A43, #24243e)"}>
+            <VStack minHeight="100vh" pb={12} bgGradient={colorMode === 'light' ? "linear(to-r, #1F1C2C, #928DAB)" : "linear(to-r, #0F2027, #203A43, #24243e)"}>
                 <Container maxW="960" mt="12" color={colorMode === 'light' ? '#FFF' : '#eee'}>
                     <ThemeBtn />
 
