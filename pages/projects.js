@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { VStack, Container } from '@chakra-ui/layout';
 import { useColorMode } from '@chakra-ui/color-mode'
 import Masonry from 'react-masonry-css'
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 import Header from '../components/Header'
 import Project from '../components/Project';
@@ -27,20 +28,21 @@ let client = require('contentful').createClient({
 
 // this defines your columns responsive breakpoints.
 const breakpointColumnsObj = {
-    default: 3,
+    default: 1,
     800: 2,
     600: 1
   };
 
 const ProjectsPage = ({projects}) => {
     const { colorMode } = useColorMode()
+    console.log(projects,123123);
     const projectsArr = projects.map(project => (
         <Project
             key={project.sys.id && project.sys.id}
             slug={project.fields.slug }
             title={project.fields.projectName && project.fields.projectName}
             excerpt={project.fields.projectExcerpt && project.fields.projectExcerpt}
-            description={project.fields.projectDescription && project.fields.projectDescription}
+            description={project.fields.projectDescription_2 && project.fields.projectDescription_2}
             featured={project.fields.featuredProject && project.fields.featuredProject}
             category={project.fields.category && project.fields.category}
             liveUrl={project.fields.projectLink && project.fields.projectLink}

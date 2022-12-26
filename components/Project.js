@@ -1,11 +1,68 @@
-import Link from 'next/link';
 import { useColorMode } from '@chakra-ui/color-mode'
-import { Badge, Box, Heading, Text, Image, ButtonGroup, Button } from "@chakra-ui/react"
-import { FaChevronRight } from 'react-icons/fa'
-
+import { Badge, Box, Heading, Image } from "@chakra-ui/react"
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { BLOCKS, INLINES, MARKS } from "@contentful/rich-text-types";
+import _ from 'lodash';
 
 const Project = ({ title, slug, excerpt, featured, category, description, liveUrl, repoUrl, img }) => {
     const { colorMode } = useColorMode()
+    const options = {
+        renderNode: {
+            [BLOCKS.EMBEDDED_ASSET]: (node) => {
+                const { url, fileName } = node.data.target.fields.file;
+                return (
+                    <img
+                        src={url}
+                        alt={fileName}
+                        style={{ height: "auto", width: "100%", margin: "1em 0", padding: '1em' }}
+                    />
+                );
+            },
+            [INLINES.HYPERLINK]: (node) => {
+                const { uri } = node.data;
+                const { value } = node.content[0];
+                return (
+                    <a target="_blank" rel="noreferrer noopener" href={uri}>
+                        {value}
+                    </a>
+                );
+            },
+            [BLOCKS.PARAGRAPH]: (node, children) => {
+                if (
+                    node.content.length === 1 &&
+                    _.find(node.content[0].marks, { type: 'code' })
+                ) {
+                    return (
+                        <div style={{ padding: '1em' }}>
+                            <CopyBlock
+                                text={node.content[0].value}
+                                language='python'
+                                showLineNumbers='false'
+                                wrapLines
+                                theme={dracula}
+                                style={{ padding: "1em 0" }}
+                            />
+                        </div>
+
+                    )
+                }
+                else
+                    return children;
+            },
+            [MARKS.CODE]: (node) => {
+                return (
+                    <div style={{ padding: '1em' }}>
+                        <CopyBlock
+                            text={node.chi}
+                            language='python'
+                            showLineNumbers='true'
+                            wrapLines
+                            theme={dracula}
+                        />
+                    </div>)
+            }
+        },
+    };
     return (
         <Box bg={colorMode === 'light' ? 'gray.700' : 'gray.900'} border="none" p="4" color="#fff" maxW="100%" borderWidth="1px" borderRadius="lg" overflow="hidden">
             {featured && (
@@ -13,28 +70,7 @@ const Project = ({ title, slug, excerpt, featured, category, description, liveUr
             )}
             <Image src={img} alt="alt text" />
             <Heading mt="3" fontSize="xl">{title && title}</Heading>
-            <Text mt="1" noOfLines={2} >{excerpt && excerpt}</Text>
-            <Box>
-                <ButtonGroup mt="3" variant="outline">
-                    <Button rightIcon={<FaChevronRight />} _hover={{ bg: colorMode === 'light' ? '#928DAB' : "green.100", color: colorMode === 'light' ? null : "#111" }} size="sm">
-                        <a target="_blank" rel="noreferrer" href={liveUrl && liveUrl}>Visit Project</a>
-                    </Button>
-                    {repoUrl &&
-                        <Button rightIcon={<FaChevronRight />} _hover={{ bg: colorMode === 'light' ? '#928DAB' : "green.100", color: colorMode === 'light' ? null : "#111" }} size="sm">
-                            <a target="_blank" rel="noreferrer" href={repoUrl && repoUrl}>See Repo</a>
-                        </Button>
-                    }  
-                     <Button _hover={{ bg: colorMode === 'light' ? '#928DAB' : "green.100", color: colorMode === 'light' ? "#fff" : "#111" }} variant="outline" size="sm" color={colorMode === 'light' ? '#928DAB' : 'green.100'}>
-                        {slug && (
-                            <Link href={`/project/${slug}`}>
-                                <a>Read post</a>
-                            </Link>
-                        )}
-                    </Button>
-
-                </ButtonGroup>
-            </Box>
-            <Text color={colorMode === 'light' ? '#928DAB' : 'green.100'} mt="2" p="1" fontSize=".75rem" variant="solid">{category && [...category]}</Text>
+            {documentToReactComponents(description, options)}
         </Box>
     )
 }
