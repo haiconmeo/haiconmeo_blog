@@ -2,6 +2,7 @@ import { useColorMode } from '@chakra-ui/color-mode'
 import { Badge, Box, Heading, Image } from "@chakra-ui/react"
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { BLOCKS, INLINES, MARKS } from "@contentful/rich-text-types";
+import { CopyBlock, dracula } from "react-code-blocks";
 import _ from 'lodash';
 
 const Project = ({ title, slug, excerpt, featured, category, description, liveUrl, repoUrl, img }) => {
