@@ -24,7 +24,7 @@ import DownloadCv from '../components/DownloadCv'
 // responsive breakpoints for masonry grid. Cant be easily adjusted here
 const breakpointColumnsObj = {
   default: 3,
-  800: 2,
+  600: 2,
   600: 1
 };
 

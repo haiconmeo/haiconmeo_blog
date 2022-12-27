@@ -1,5 +1,5 @@
 import { useColorMode } from '@chakra-ui/color-mode'
-import { Box, Heading, Text } from "@chakra-ui/layout"
+import { Box, Heading, Text,List } from "@chakra-ui/layout"
 
 import { customFour } from '../templateData'
 
@@ -10,9 +10,11 @@ const CustomComponentFour = () => {
             <Heading bgGradient={colorMode === 'light' ? "linear(to-r, green.100, #928DAB)" : "linear(to-r, green.100, purple.700)"} bgClip="text" fontSize="xl">
                 {customFour.heading}
             </Heading>
+            <List spacing={3}>
             {customFour.body.map((skill, i) => (
                 <Text key={i}>{skill.name}  {skill.value}</Text>
             ))}
+            </List>
         </Box>
     )
 }

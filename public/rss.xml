@@ -9,44 +9,44 @@
             <link>https://haiconmeo.info</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 18 Dec 2022 11:59:35 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 27 Dec 2022 14:09:02 GMT</lastBuildDate>
         <atom:link href="https://haiconmeo.info/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 18 Dec 2022 11:59:35 GMT</pubDate>
+        <pubDate>Tue, 27 Dec 2022 14:09:02 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2022, Ibas]]></copyright>
         <item>
             <title><![CDATA[KNN (K Nearest Neighbors)  python]]></title>
             <description><![CDATA[Triển khai thuật toán K Hàng xóm gần nhất (KNN), chỉ sử dụng các mô-đun Python tích hợp sẵn và numpy, đồng thời tìm hiểu về phép toán đằng sau thuật toán ML phổ biến này.]]></description>
             <link>https://haiconmeo.info/blog/knn-python</link>
             <guid isPermaLink="true">https://haiconmeo.info/blog/knn-python</guid>
-            <pubDate>Sun, 18 Dec 2022 11:59:35 GMT</pubDate>
+            <pubDate>Tue, 27 Dec 2022 14:09:02 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Các bước thông thường để giải quyết bài toán machine learning]]></title>
             <description><![CDATA[Machine learning (ML) hay máy học là một nhánh của trí tuệ nhân tạo (AI), nó là một lĩnh vực nghiên cứu cho phép máy tính có khả năng cải thiện chính bản thân]]></description>
             <link>https://haiconmeo.info/blog/C%C3%A1c%20b%C6%B0%E1%BB%9Bc%20th%C3%B4ng%20th%C6%B0%E1%BB%9Dng%20%C4%91%E1%BB%83%20gi%E1%BA%A3i%20quy%E1%BA%BFt%20b%C3%A0i%20to%C3%A1n%20machine%20learning</link>
             <guid isPermaLink="true">https://haiconmeo.info/blog/C%C3%A1c%20b%C6%B0%E1%BB%9Bc%20th%C3%B4ng%20th%C6%B0%E1%BB%9Dng%20%C4%91%E1%BB%83%20gi%E1%BA%A3i%20quy%E1%BA%BFt%20b%C3%A0i%20to%C3%A1n%20machine%20learning</guid>
-            <pubDate>Sun, 18 Dec 2022 11:59:35 GMT</pubDate>
+            <pubDate>Tue, 27 Dec 2022 14:09:02 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Khai thác lỗi SVG Expansion]]></title>
             <description><![CDATA[SVG là một định dạng giúp các website render hình ảnh nhanh hơn với các size hình ảnh khi phóng to thu nhỏ không bị ảnh hưởng, ưu điểm của svg rất nhiều nhưng nó cũng có nhiều vấn đề khi các file svg được upload một cách tự do]]></description>
             <link>https://haiconmeo.info/blog/SVG-Expansion-la-gi</link>
             <guid isPermaLink="true">https://haiconmeo.info/blog/SVG-Expansion-la-gi</guid>
-            <pubDate>Sun, 18 Dec 2022 11:59:35 GMT</pubDate>
+            <pubDate>Tue, 27 Dec 2022 14:09:02 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Lab 4: SQL injection UNION attack, finding a column containing text]]></title>
             <description><![CDATA[This lab contains an SQL injection vulnerability in the product category filter. The results from the query are returned in the application's response]]></description>
             <link>https://haiconmeo.info/blog/SQL%20injection%20UNION%20attack,%20finding%20a%20column%20containing%20text</link>
             <guid isPermaLink="true">https://haiconmeo.info/blog/SQL%20injection%20UNION%20attack,%20finding%20a%20column%20containing%20text</guid>
-            <pubDate>Sun, 18 Dec 2022 11:59:35 GMT</pubDate>
+            <pubDate>Tue, 27 Dec 2022 14:09:02 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Lab 3: SQL injection UNION attack, determining the number of columns returned by the query PRACTITIONER]]></title>
             <description><![CDATA[This lab contains an SQL injection vulnerability in the product category filter. The results from the query are returned in the application's response, so you can use a UNION attack to retrieve data from other tables]]></description>
             <link>https://haiconmeo.info/blog/SQL%20injection%20UNION%20attack</link>
             <guid isPermaLink="true">https://haiconmeo.info/blog/SQL%20injection%20UNION%20attack</guid>
-            <pubDate>Sun, 18 Dec 2022 11:59:35 GMT</pubDate>
+            <pubDate>Tue, 27 Dec 2022 14:09:02 GMT</pubDate>
         </item>
     </channel>
 </rss>

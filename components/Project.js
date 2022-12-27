@@ -11,7 +11,7 @@ const Project = ({ title, slug, excerpt, featured, category, description, liveUr
             [BLOCKS.EMBEDDED_ASSET]: (node) => {
                 const { url, fileName } = node.data.target.fields.file;
                 return (
-                    <img
+                    <Image
                         src={url}
                         alt={fileName}
                         style={{ height: "auto", width: "100%", margin: "1em 0", padding: '1em' }}
@@ -47,7 +47,7 @@ const Project = ({ title, slug, excerpt, featured, category, description, liveUr
                     )
                 }
                 else
-                    return children;
+                    return <p>{children}</p>;
             },
             [MARKS.CODE]: (node) => {
                 return (

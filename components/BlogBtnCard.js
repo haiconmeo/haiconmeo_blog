@@ -13,8 +13,9 @@ const BlogBtnCard = () => {
             <HStack mt="4">
                 <Button onClick={() => router.push('/blog')} _hover={{ bg: colorMode === 'light' ? '#928DAB' : "green.100", color: colorMode === 'light' ? null : "#111"}} variant="outline" leftIcon={<FaPen/>}>Personal</Button>\
             </HStack>
-            <Text>I write articles about content like networking,  machine learning, pen test</Text>
-            
+            <Box mt="2">
+            <Text fontSize="lg">I write articles about content like networking,  machine learning, pen test</Text>
+            </Box>
          </Box>
     )
 }
