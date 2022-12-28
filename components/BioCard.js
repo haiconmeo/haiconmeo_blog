@@ -18,6 +18,7 @@ const BioCard = () => {
                 <IconButton as="a" target="_blank" rel="noreferrer" href={socials.twitter} _hover={{ bg: colorMode === 'light' ? '#928DAB' : "green.100", color: colorMode === 'light' ? null : "#111"}} bg={colorMode === 'light' ? "gray.700" : "gray.700"}><FaFacebook/></IconButton>
                 <IconButton as="a" target="_blank" rel="noreferrer" href={socials.github} _hover={{ bg: colorMode === 'light' ? '#928DAB' : "green.100", color: colorMode === 'light' ? null : "#111"}} bg={colorMode === 'light' ? "gray.700" : "gray.700"}><FaGithub/></IconButton>
                 <IconButton as="a" target="_blank" rel="noreferrer" href={socials.linkedIn} _hover={{ bg: colorMode === 'light' ? '#928DAB' : "green.100", color: colorMode === 'light' ? null : "#111"}} bg={colorMode === 'light' ? "gray.700" : "gray.700"}><FaLinkedinIn/></IconButton>
+
             </HStack>
          </Box>
     )
