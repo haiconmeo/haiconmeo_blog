@@ -17,7 +17,7 @@ export async function getStaticProps() {
       const resources = await cloudinary.v2.api.resources({
         type: 'upload',
         prefix: folderPath,
-        max_results:25
+        max_results:100
       })
       let images = resources.resources.filter(resource => resource.resource_type === 'image')
     images = images.map(e=>'http://res.cloudinary.com/dsthxgzde/image/upload/c_fill,w_350/'.concat(e.public_id))
@@ -28,8 +28,6 @@ export async function getStaticProps() {
     }
 
 import Masonry from 'react-masonry-css'
-import { concat } from 'lodash'
-// responsive breakpoints for masonry grid. Cant be easily adjusted here
 const breakpointColumnsObj = {
   default: 3,
   800: 2,
