@@ -17,6 +17,16 @@ a {
   box-sizing: border-box;
 }
 
+dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
+  font-size: revert !important;
+  font-weight: revert !important;
+  margin: revert !important;
+}
+
+ol, ul, li {
+  margin: revert !important;
+  padding: revert !important;
+}
 
 .my-masonry-grid {
   display: -webkit-box; /* Not needed if autoprefixing */
