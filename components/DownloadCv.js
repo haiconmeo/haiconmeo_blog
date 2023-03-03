@@ -12,7 +12,7 @@ const DownloadCv = () => {
             </Heading>
                 
             {customcv.body.map((skill, i) => (
-                <a href={skill.value}><Text key={i}>{skill.name}</Text></a>
+                <a key={i} href={skill.value}><Text >{skill.name}</Text></a>
             ))}
         </Box>
     )
