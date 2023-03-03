@@ -9,11 +9,11 @@ const CustomComponentOne = () => {
             <Heading bgGradient={colorMode === 'light' ? "linear(to-r, green.100, #928DAB)" : "linear(to-r, green.100, purple.700)"} bgClip="text" fontSize="xl">
                 {project.heading}
             </Heading>
-            <List >
+
             {project.body.map((skill, i) => (
                 <Text key={i}>{skill.name}</Text>
             ))}
-            </List>
+
         </Box>
     )
 }

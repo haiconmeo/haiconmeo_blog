@@ -13,7 +13,8 @@ export const socials = {
 
 export const bio = {
     heading: 'About me',
-    body: "I’m Hoang Huu Manh, also known as haiconmeo. I’m a backend developer. A developer has about 2 years experience in developing software. Hardworking and responsible.I'm really interested in Artificial intelligence."
+    body: "I am a Backend developer with 2.5 year experience in Python, Nestjs, Restful API, database (MongoDB, PostgresSQL), socket and web server (nginx). I also have experience writing SQL queries.\
+    \nIhave worked with technologies like swagger, AWS and have knowledge about systems. I have used Python to make automation tools such as reg account, buff traffic. "
 };
 
 export const contact = {
