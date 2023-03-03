@@ -14,9 +14,10 @@ const DownloadCv = () => {
             </Heading>
                 
             {customcv.body.map((skill, i) => (
-                <Text><Link key={i} href={skill.value} isExternal>
+                <Link key={i} href={skill.value} isExternal>
                   {skill.name} <ExternalLinkIcon mx='2px' />
-                </Link></Text>
+                </Link>
+</br>
             ))}
         </Box>
     )
