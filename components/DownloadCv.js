@@ -17,7 +17,7 @@ const DownloadCv = () => {
                 <Link key={i} href={skill.value} isExternal>
                   {skill.name} <ExternalLinkIcon mx='2px' />
                 </Link>
-                   <br />
+                  <div></div>
             ))}
         </Box>
     )
