@@ -1,10 +1,8 @@
 import { useColorMode } from '@chakra-ui/color-mode'
 import { Box, Heading, Text,List } from "@chakra-ui/layout"
-
 import { project } from '../templateData'
 
 const CustomComponentOne = () => {
-    const router = useRouter();
     const { colorMode } = useColorMode()
     return (
         <Box p="4" bg={colorMode === 'light' ? 'gray.800' : 'gray.900'} color="#fff">
