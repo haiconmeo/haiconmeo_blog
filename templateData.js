@@ -14,7 +14,7 @@ export const socials = {
 export const bio = {
     heading: 'About me',
     body: "I am a Backend developer with 2.5 year experience in Python, Nestjs, Restful API, database (MongoDB, PostgresSQL), socket and web server (nginx). I also have experience writing SQL queries.\
-    \nIhave worked with technologies like swagger, AWS and have knowledge about systems. I have used Python to make automation tools such as reg account, buff traffic. "
+    \nI have worked with technologies like swagger, AWS, load balance and have knowledge about systems. I have used Python to make automation tools such as reg account, buff traffic. "
 };
 
 export const contact = {
@@ -72,6 +72,9 @@ export const skillsAdvanced = [
     ,
     {
         name: 'Docker'
+    } ,
+    {
+        name: 'Nginx'
     }
 ];
 
@@ -81,8 +84,29 @@ export const customOne = {
 }
 
 export const customTwo = {
-    heading: 'Film photos',
-    body: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit.'
+    heading: 'Personal projects',
+    body: [
+        {
+            name: 'Buff traffic website',
+            value:'2020'
+        },
+        {
+            name: 'Redbubble tools',
+            value:'2021'
+        },
+        {
+            name: 'Teepublic tools',
+            value:'2021'
+        },
+        {
+            name: 'Crawl manga',
+            value:'2022'
+        },
+        {
+            name: 'Blog and Shop haiconmeo',
+            value:'2022-2023'
+        },
+    ] 
 }
 export const customcv = {
     heading: 'Download my CV',
@@ -105,7 +129,7 @@ export const project = {
             value:'2021'
         },
         {
-            name: 'Craler in merch, teepublic, ...',
+            name: 'Crawler in merch, teepublic, ...',
             value:'2021'
         },
         {
@@ -119,28 +143,21 @@ export const project = {
     ]
 }
 export const customFour = {
-    heading: '証明書 ',
+    heading: 'Activities ',
     body: [
         {
-            name: '日本語能力試験',
+            name: 'Practice my speaking skills in Japanese',
             value:'N3'
         },
         {
-            name: 'Hackerrank Python Basic',
+            name: 'Learn about industry-used penetration testing tools',
             value:''
         },
         {
-            name: 'Google Data Analytics',
+            name: 'deployment and monitoring',
             value:''
         },
-        {
-            name: 'Data Analysis with Python',
-            value:''
-        },
-        {
-            name: 'Hackerrank SQL',
-            value:''
-        },
+
     ]
 }
 

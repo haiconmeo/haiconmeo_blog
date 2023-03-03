@@ -10,11 +10,9 @@ const CustomComponentFour = () => {
             <Heading bgGradient={colorMode === 'light' ? "linear(to-r, green.100, #928DAB)" : "linear(to-r, green.100, purple.700)"} bgClip="text" fontSize="xl">
                 {customFour.heading}
             </Heading>
-            <List spacing={3}>
             {customFour.body.map((skill, i) => (
-                <Text key={i}>{skill.name}  {skill.value}</Text>
+                <Text key={i}>{skill.name}</Text>
             ))}
-            </List>
         </Box>
     )
 }

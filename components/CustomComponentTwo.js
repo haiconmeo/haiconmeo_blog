@@ -1,7 +1,7 @@
 import { useColorMode } from '@chakra-ui/color-mode'
 import { FaPhotoVideo } from 'react-icons/fa'
 import { useRouter } from 'next/router';
-import { Box, HStack, Heading, Button } from "@chakra-ui/react"
+import { Box, HStack, Heading, Button, Text } from "@chakra-ui/react"
 
 import { customTwo } from '../templateData'
 
@@ -14,9 +14,9 @@ const CustomComponentTwo = () => {
             <Heading bgGradient={colorMode === 'light' ? "linear(to-r, green.100, #928DAB)" : "linear(to-r, green.100, purple.700)"} bgClip="text" fontSize="xl">
                 {customTwo.heading}
             </Heading>
-            <HStack mt="4">
-            <Button onClick={() => router.push('/image')} _hover={{ bg: colorMode === 'light' ? '#928DAB' : "green.100", color: colorMode === 'light' ? null : "#111"}} variant="outline" >Film photo</Button>\
-            </HStack>
+            {customTwo.body.map((skill, i) => (
+                <Text key={i}>{skill.name}</Text>
+            ))}
 
         </Box>
     )
