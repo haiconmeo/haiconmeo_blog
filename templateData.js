@@ -109,16 +109,28 @@ export const customTwo = {
     ] 
 }
 export const customcv = {
-    heading: 'Download my CV',
-    body: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit.'
-}
+    heading: 'Experience',
+    body: [
+        {
+            name: 'Paracel technology solutions ',
+            value:'https://paraceltech.com/en/'
+        },
+        {
+            name: 'OM Sandbox',
+            value:'https://www.facebook.com/OM-Sandbox-178498579660781/'
+        },
+        {
+            name: 'Devtify technology',
+            value:'https://devtify.com/'
+        }
+    ]}
 
 export const customThree = {
     heading: '学歴',
     body: '２020年、ダナン大学工科大学を卒業した\nGPA ３.23'
 }
 export const project = {
-    heading: 'Project',
+    heading: 'Projects',
     body: [
         {
             name: 'Face detection with SSD',
@@ -143,7 +155,7 @@ export const project = {
     ]
 }
 export const customFour = {
-    heading: 'Activities ',
+    heading: 'Activities 2023',
     body: [
         {
             name: 'Practice my speaking skills in Japanese',
@@ -154,7 +166,7 @@ export const customFour = {
             value:''
         },
         {
-            name: 'deployment and monitoring',
+            name: 'Deployment and monitoring',
             value:''
         },
 

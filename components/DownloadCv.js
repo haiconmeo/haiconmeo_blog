@@ -11,7 +11,9 @@ const DownloadCv = () => {
                 {customcv.heading}
             </Heading>
                 
-
+            {customcv.body.map((skill, i) => (
+                <a href={skill.value}><Text key={i}>{skill.name}</Text></a>
+            ))}
         </Box>
     )
 }
