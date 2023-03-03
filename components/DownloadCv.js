@@ -1,5 +1,7 @@
 import { useColorMode } from '@chakra-ui/color-mode'
 import { Box, Heading, Text } from "@chakra-ui/layout"
+import { Link } from '@chakra-ui/react'
+import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 import { customcv } from '../templateData'
 
@@ -12,7 +14,9 @@ const DownloadCv = () => {
             </Heading>
                 
             {customcv.body.map((skill, i) => (
-                <a key={i} href={skill.value}><Text >{skill.name}</Text></a>
+                <Link key={i} href={skill.value} isExternal>
+                  {skill.name} <ExternalLinkIcon mx='2px' />
+                </Link>
             ))}
         </Box>
     )
