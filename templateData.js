@@ -40,6 +40,10 @@ export const skillsBasic = [
         name: 'TS',
         rating: 60
     },
+    {
+        name: 'GO',
+        rating: 60
+    },
 ];
 
 export const skillsAdvanced = [
@@ -56,10 +60,17 @@ export const skillsAdvanced = [
         name: 'Crawler'
     },
     {
-        name: 'Basic AWS'
+        name: 'Lightsail, s3, lambda, clouldfront'
     },
     {
         name: 'Git'
+    },
+    {
+        name: 'Golang'
+    }
+    ,
+    {
+        name: 'Docker'
     }
 ];
 
@@ -81,7 +92,31 @@ export const customThree = {
     heading: '学歴',
     body: '２020年、ダナン大学工科大学を卒業した\nGPA ３.23'
 }
-
+export const project = {
+    heading: 'Project',
+    body: [
+        {
+            name: 'Face detection with SSD',
+            value:'2020'
+        },
+        {
+            name: 'Dewix - edit photoshop file of low level in web',
+            value:'2021'
+        },
+        {
+            name: 'Craler in merch, teepublic, ...',
+            value:'2021'
+        },
+        {
+            name: 'dcom - Proxy',
+            value:'2022'
+        },
+        {
+            name: 'Genie Ask and Earn',
+            value:'2022-2023'
+        },
+    ]
+}
 export const customFour = {
     heading: '証明書 ',
     body: [

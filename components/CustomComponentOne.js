@@ -1,16 +1,22 @@
-import { useRouter } from 'next/router';
 import { useColorMode } from '@chakra-ui/color-mode'
-import { Box, Heading, Button } from "@chakra-ui/react"
-import { FaChevronRight } from 'react-icons/fa';
+import { Box, Heading, Text,List } from "@chakra-ui/layout"
+
+import { project } from '../templateData'
 
 const CustomComponentOne = () => {
     const router = useRouter();
     const { colorMode } = useColorMode()
     return (
-        <Box bg={colorMode === 'light' ? "gray.700" : "gray.900"}  w="100%" p={4} color={colorMode === 'light' ? "#fff" : "#ccc"}>
-            <Heading fontSize="xl" bgGradient={colorMode === 'light' ? "linear(to-r, green.100, #928DAB)" : "linear(to-r, green.100, purple.700)"} bgClip="text">My projects</Heading>
-            <Button onClick={() => router.push('/projects')} _hover={{ bg: colorMode === 'light' ? '#928DAB' : "green.100", color: colorMode === 'light' ? null : "#111"}} variant="outline" rightIcon={<FaChevronRight/>} mt="4">See work</Button>
-         </Box>
+        <Box p="4" bg={colorMode === 'light' ? 'gray.800' : 'gray.900'} color="#fff">
+            <Heading bgGradient={colorMode === 'light' ? "linear(to-r, green.100, #928DAB)" : "linear(to-r, green.100, purple.700)"} bgClip="text" fontSize="xl">
+                {project.heading}
+            </Heading>
+            <List spacing={3}>
+            {project.body.map((skill, i) => (
+                <Text key={i}>{skill.name}  {skill.value}</Text>
+            ))}
+            </List>
+        </Box>
     )
 }
 
