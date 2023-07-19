@@ -1,5 +1,5 @@
 export const headerData = {
-    name: 'Manh',
+    name: 'Hoang Huu Manh',
     caption: "a backend web developer",
     avatarUrl: 'https://media-exp1.licdn.com/dms/image/C4E03AQHosBxw7LwRDQ/profile-displayphoto-shrink_800_800/0/1647776551824?e=1673481600&v=beta&t=x_K9IwvznThy2mwkyeymonLsMlwo4QQma_oZhYveS3I'
 }
