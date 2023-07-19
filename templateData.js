@@ -14,7 +14,7 @@ export const socials = {
 export const bio = {
     heading: 'About me',
     body: "I am a Backend developer with 2.5 year experience in Python, Nestjs, Restful API, database (MongoDB, PostgresSQL), socket and web server (nginx). I also have experience writing SQL queries.\
-    \nI have worked with technologies like swagger, AWS, load balance and have knowledge about systems. I have used Python to make automation tools such as reg account, buff traffic. "
+    \nI have worked with technologies like swagger, AWS, load balance and have knowledge about systems. I have used Python to make automation tools such as reg account, buff traffic, translate subtile,.. "
 };
 
 export const contact = {
@@ -106,6 +106,10 @@ export const customTwo = {
             name: 'Blog and Shop haiconmeo',
             value:'2022-2023'
         },
+        {
+            name: 'Translate subtitle',
+            value:'2020'
+        },
     ] 
 }
 export const customcv = {
@@ -152,6 +156,16 @@ export const project = {
             name: 'Genie Ask and Earn',
             value:'2022-2023'
         },
+        ,
+        {
+            name: 'Immerce',
+            value:'2023'
+        },
+        ,
+        {
+            name: 'toothlessAi',
+            value:'2023'
+        }
     ]
 }
 export const customFour = {
