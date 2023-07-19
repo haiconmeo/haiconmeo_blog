@@ -13,7 +13,7 @@ export const socials = {
 
 export const bio = {
     heading: 'About me',
-    body: "I am a Backend developer with 2.5 year experience in Python, Nestjs, Restful API, database (MongoDB, PostgresSQL), socket and web server (nginx). I also have experience writing SQL queries.\
+    body: "I am a Backend developer with 3 year experience in Python, Nestjs, Restful API, database (MongoDB, PostgresSQL), socket and web server (nginx). I also have experience writing SQL queries.\
     \nI have worked with technologies like swagger, AWS, load balance and have knowledge about systems. I have used Python to make automation tools such as reg account, buff traffic, translate subtile,.. "
 };
 
